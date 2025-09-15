@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stray Pet Adoption Center</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="brand">
+        <div class="logo">🐾</div>
+        <div>
+          <h1>Stray Pet Adoption Center</h1>
+          <p class="lead">Find your new best friend today</p>
+        </div>
+      </div>
+      <nav>
+        <button class="btn">Adopt Now</button>
+        <button class="btn secondary">Donate</button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-card">
+        <h2>Give them a home ❤️</h2>
+        <p>Thousands of stray pets are waiting for love and care. Adopt and make a difference today.</p>
+        <div class="stats">
+          <div class="stat">50+ Pets</div>
+          <div class="stat">20 Adoptions This Month</div>
+        </div>
+      </div>
+      <img
+        src="https://thumbs.dreamstime.com/b/cheerful-group-different-pets-including-corgi-various-cats-sitting-together-against-light-blue-background-their-371460053.jpg"
+        alt="Happy adopted pets"
+        class="hero-img"
+      />
+    </section>
+
+    <!-- Search & Filter -->
+    <section class="controls">
+      <div class="search">
+        <input type="text" id="searchInput" placeholder="Search pets..." />
+      </div>
+      <div class="filters">
+        <select id="filterBreed">
+          <option value="">All Breeds</option>
+          <option value="Dog">Dogs</option>
+          <option value="Cat">Cats</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Pet Grid -->
+    <section class="grid"></section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Stray Pet Adoption Center</p>
+      <p>Made with ❤️</p>
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-backdrop hidden" id="modalBackdrop">
+    <div class="modal">
+      <header>
+        <h3 id="modalTitle">Pet Details</h3>
+        <button class="close" id="closeModal">&times;</button>
+      </header>
+      <div class="content" id="modalContent"></div>
+      <div class="modal-actions" style="text-align: right; margin-top: 10px;">
+        <button class="btn adopt-confirm-btn" id="adoptNowBtn">Adopt Now</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
